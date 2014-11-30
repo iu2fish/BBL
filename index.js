@@ -4,7 +4,7 @@
  * @date    2014-11-16 16:07:50
  * @version 0.0.1
  */
- 
+
 (function(){
 	var Man = Backbone.Model.extend({
 		initialize: function () {
