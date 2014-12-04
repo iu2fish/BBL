@@ -90,5 +90,5 @@ app.AppView = Backbone.View.extend({
 				'completed' : completed
 			});
 		});
-	}
+	} 
 });
