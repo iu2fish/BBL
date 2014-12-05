@@ -25,6 +25,7 @@ app.TodoView = Backbone.View.extend({
         return this;
     },
 
+
     editL function(){
         this.$el.addClass('editing');
         this.$input.focus();
