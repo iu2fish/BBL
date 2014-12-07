@@ -24,7 +24,7 @@ app.TodoView = Backbone.View.extend({
         this.listenTo(this.template(this.model.toJSON() ));
         return this;
     },
-
+ 
 
     editL function(){
         this.$el.addClass('editing');
