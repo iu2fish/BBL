@@ -8,7 +8,7 @@
 var app = app || {};
 
 
-var TodoList = Backbone.collection.extend({
+var TodoList = Backbone.Collection.extend({
   model: app.Todo,
   completed: function() {
     return this.fillter(function (todo) {
@@ -24,8 +24,8 @@ var TodoList = Backbone.collection.extend({
     if(!this.length){
       return 1;
     }
-    return this.last().get('order') + 1；
-  }，
+    return this.last().get('order') + 1;
+  },
   comparator:function(todo) {
     return todo.get('order');
   }

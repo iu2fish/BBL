@@ -26,6 +26,33 @@
 	<p>Write by <a href="https://github.com/iu2fish">iu2fish</a></p>
 </div>
 </body>
+<script type="text/template" id="item-template">
+  <div class='view'>
+    <input class='toggle' type='checkbox' <%= completed ? 'checked' : '' %>>
+    <label><%- title %></label>
+    <button class='destroy'></button>
+  </div>
+  <input class='edit' value='<%- title %>'
+</script>
+<script type="text/template" id="stats-template">
+  <span id='todo-count'><strong><%= remaining %> </strong>
+    <%= remaining === 1 ? 'item' : 'items' %>left
+  </span>
+  <ul>
+    <li>
+      <a class='selected' href='#/'>All</a>
+    </li>
+    <li>
+      <a href='#/active'>Active</a>
+    </li>
+    <li>
+      <a href='#/completed'>Completed</a>
+    </li>
+  </ul>
+  <% if (completed) {%>
+    <button id='clear-completed'>Clear completed (<%= completed %>)</button>
+  <% } %>
+</script>
 <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="lib/underscore.js"></script>
 <script type="text/javascript" src="lib/backbone.js"></script>
@@ -36,5 +63,4 @@
 <script type "text/javascript" src="views/app.js"></script>
 <script type="text/javascript" src="routers/router.js"></script>
 
-<script type="text/javascript" src="index.js"></script>
 </html>
