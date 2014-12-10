@@ -88,7 +88,7 @@ app.AppView = Backbone.View.extend({
 		app.Todos.each(function( todo ) {
 			todo.save({
 				'completed' : completed
-			});
+			}); 
 		});
 	}  
 });
