@@ -7,7 +7,7 @@
 
 var app = app || {};
 
-
+ 
 var TodoList = Backbone.Collection.extend({
   model: app.Todo,
   completed: function() {
