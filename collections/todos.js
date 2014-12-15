@@ -22,7 +22,7 @@ var TodoList = Backbone.Collection.extend({
 
   nextOrder: function() {
     if(!this.length){
-      return 1;
+      return 1; 
     }
     return this.last().get('order') + 1;
   },
