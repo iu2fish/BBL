@@ -5,11 +5,11 @@
  * @version 0.0.1
  */
 
- 
+
 var app = app || {};
 
 var ENTER_KEY = 13;
 
-$(function(){
-	new app.AppView(); 
+$(function() {
+    new app.AppView();
 });
