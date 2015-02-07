@@ -12,11 +12,13 @@ app.TodoView = Backbone.View.extend({
 
     tagName: 'li',
 
-    template: _.template( $('#item-templtae').html() ),
+    template: _.template( $('#item-template').html() ),
 
     events: {
+        'click .toggle': 'togglecompleted',
         'dblclick label': 'edit',
         'keypress .edit': 'updateOnEnter',
+        'clicl .destory': 'clear',
         'blur .edit': 'close'
     },
 
